@@ -8,15 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://cdn.tailwindcss.com"></script>
       
-     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="../Payment/public/css/index.css">
     <script src="../Payment/src/app.js"></script>
     
     <title>Razorpay Payment Gateway</title>
 </head>
 
 <body class="font-sans antialiased  bg-slate-900 min-h-full flex flex-col">
-    
-   {{>nav}}
+        
+ <nav class="sticky top-0 z-50 border-b-2 border-sky-500/100 items-centre px-5 py-4 bg-slate-900 navBox ">
+        <div class="flex justify-between items-center font-medium text-gray-200">
+            <div class="ml-6 flex space-x-8">
+                <a href="" class=" hover:text-sky-500/100"> New payment </a>
+                <a href="" class=" hover:text-sky-500/100"> Transactions History </a>
+                <a href="" class=" hover:text-sky-500/100"> Get started </a>
+                <a href="" class=" hover:text-sky-500/100"> About Us </a>
+            </div>
+            <div class="flex ml-4 mr-6 items-center space-x-5">
+                
+                     <a href="/login" class=" hover:text-sky-500/100"> Login </a>
+                 <a href="/singup" class="rounded-lg text-sm items-centre px-3 py-2 bg-sky-500/100
+                     hover:bg-sky-600/40  "> Sign Up </a>
+            </div>
+        </div>
+    </nav>
     <div class="flex-auto justify-center items-center">
         <div class="paybtn">
         <button id="Pay" type="submit"
