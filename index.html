@@ -6,9 +6,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://cdn.tailwindcss.com"></script>
-      
-     <link rel="stylesheet" href="../Payment/public/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+.relative{
+  position: relative;
+}
+.navBox{
+  border-bottom-width: 1px;
+  border-color: #1f2937;
+}
+.box {
+  border-top-width: 4px;
+  border-color: #1f2937;
+  background-color: #1f2937;
+  border-radius: 10px;
+}
+.label{
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+.fill{
+  display: block;
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-color: #374151;
+  background-color: #374151;
+  border-radius: 6px; 
+}
+.addbutton {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  border-color: #374151;
+  background-color: #374151;
+  color: #e5e7eb;
+}
+
+input[type=checkbox].switch {
+  position: relative;
+  display: inline-flex;
+  height: 1.5rem;
+  width: 2.75rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 9999px;
+  border-width: 4.8px;
+  border-color: transparent;
+  background-color: #374151;
+  background-image: none;
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[type=checkbox].switch:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+input[type=checkbox].switch:disabled {
+  cursor: not-allowed;
+}
+
+input[type=checkbox].switch:checked {
+  background-color: rgb(14 165 233);
+}
+select {
+  
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  
+}
+.button{
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+.button.is-light {
+  border-color: #374151;
+  background-color: #374151;
+  
+  color: #e5e7eb;
+}
+
+.paybtn{
+    margin-left: 37rem; 
+    margin-right:35.5rem;
+}
+    </style>
     <script src="../Payment/src/app.js"></script>
     
     <title>Razorpay Payment Gateway</title>
